@@ -11,7 +11,7 @@ The following table benchmarks our baseline against the proposed generative arch
 | Model                         | Overall Accuracy | Closed-Ended (Y/N) | Open-Ended (Descriptive) |  ROUGE-L   |
 | :---------------------------- | :--------------: | :----------------: | :----------------------: | :--------: |
 | **CNN-LSTM + Attention**      |      34.22%      |       52.78%       |          1.23%           |   0.3467   |
-| **MedBLIP (LoRA Fine-tuned)** |      45.33%      |       59.72%       |          19.75%          |   0.4914   |
+| **BLIP**                      |      45.33%      |       59.72%       |          19.75%          |   0.4914   |
 | **Qwen3-VL-2B-Instruct**      |    **54.67%**    |     **68.75%**     |        **29.63%**        | **0.5828** |
 
 ### Key Project Insights
@@ -32,7 +32,7 @@ A discriminative model that treats VQA as a classification task.
 - **Language:** LSTM network.
 - **Fusion:** Tanh-based additive attention.
 
-### 2. MedBLIP (Proposed Generative)
+### 2. BLIP (Proposed Generative)
 
 A parameter-efficient VLM fine-tuned on medical data.
 
